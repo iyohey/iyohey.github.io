@@ -25,12 +25,12 @@ layout: default
 <script src="https://jjeejj.github.io/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: '<%= page.date %>'
     owner: 'iyohey',
     repo: 'iyohey.github.io',
     oauth: {
         client_id: '9ba9ea5cd8b7f03722af',
         client_secret: '8dee58b2c64455050081a5d7b077edcf39fc7973',
+        id: '<%= page.date %>',
     },
 });
 gitment.render('gitmentContainer');
