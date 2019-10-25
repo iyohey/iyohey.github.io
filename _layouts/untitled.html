@@ -1,0 +1,64 @@
+   <!DOCTYPE HTML>
+<html xmlns="http:www.w3.org" xml:lang="en" lang="en">
+<meta charset="utf-8"/>
+   <div>
+   <p class="small">评论区</p>
+   <textarea id="texthelpblock" class="form-control" rows="3">
+   </textarea>
+   <p class="text-right"><button type="button" class="btn btn-primary btn-xs">提交评论</button></p>
+</div>
+    <script     src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#comment_sub").click(function(){
+            if(!$('#comment_text').val())
+              $('#warning').html("<div class='alert alert-warning' role='alert'>评论内容不能为空。</div>");
+            else
+            {
+                //将警告区域的信息清除
+                $('#warning').html("");
+                var content = $('#comment_text').val();
+                var mydate = new Date();
+
+                //alert(content);
+                                                       $('#content').append(mydate.toLocaleDateString() + "：<br>" + content + "<hr>");
+
+                //清空文本域
+                $('#comment_text').val("");
+
+                var article_id = $('#article_id').text();
+
+                //使用ajax来向后台传递数据
+                $.ajax({
+                        type: "post",
+                 url: "scripts/preserve_comment.php",
+                 data: {article_id: article_id, content: content, time: mydate},
+                 datatype: "json", //回调函数接收数据的格式
+                 //函数调用成功后
+                 success: function(msg){
+                     //什么也不用做
+                 },
+                 //函数调用失败后，
+                 error: function(msg){
+                     //弹窗，告知用户写入失败
+                     //alert("评论内容写入失败");
+                     alert(msg);
+                 }
+                 });
+            } 
+        });
+    });
+    </script>
+
+<p id="article_id" class="hidden"><?php echo $article_id ?></p>
+<div><p id="content" class="small">
+<?php
+    for($i = 0; $i < mysql_num_rows($comment_res); $i++)
+    {
+     $create_time = mysql_result($comment_res, $i, 'create_time');
+     $comm_content = mysql_result($comment_res, $i, 'content');
+     echo $create_time . "<br>" . $comm_content . "<hr>";
+    }
+?>
+</p></div>
