@@ -19,65 +19,7 @@ layout: default
 
 </div>
 
-<html>
-<style>
- *{
-  text-align: center;
- }
- {font-family: Arial }
- nav li{
-  display: inline;
-  width: 30%;
-  text-decoration: none;
-  padding: 10px 5px 5px 10px;
- }
- li:hover{
-  background-color: lightblue;
- }
- section{
-  height: 300px;
- }
- </style>
 
-	<nav>
-		<nav id="nav">
-	<ul>
-		<li class="act">1</li>
-		<li>2</li>
-		<li>3</li>
-	</ul>
-    </nav>
-
-    <div id="container">
-    	<section class="tab"><img src="f.jpg"></section>
-        <section class="tab"><img src="a.jpg"></section>
-        <section class="tab"><img src="b.jpg"></section>
-
-
-    <script type="text/javascript">
-    	window.onload=function(){
-    	var nav=document.getElementById('nav');    
-        var li=nav.getElementsByTagName('li');
-        var container=document.getElementById('container')
-        var tab=container.getElementsByClassName('tab')
-        for(var i=0;i<li.length;i++){
-        	li[i].index=i;
-        	li[i].onclick=function(){
-        		for(var i=0;i<li.length;i++){
-        			li[i].className='';
-        			tab[i].style.display="none";
-        		}
-        this.className='act';
-       tab[this.index].style.display="block";
-        }
-                for(var m=1;m<li.length;m++){
-                    li[m].className='';
-                    tab[m].style.display="none";      
-          }
-        }
-    }
-    </script>
-	    </html>
 
 
 
