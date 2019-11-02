@@ -2,7 +2,7 @@
 title: Leslie
 subtitle: Is's my private blog.
 welcome_message: <a href="https://baidu.com" target="_blank">maybe you wanna go</a>
-description: If you know me,that's cool.If you don't,you may not get what you want.xd
+description: This is our playground.
 creator: <a href="http://onev.cat">@onevcat</a>
 
 url: "http://vno.onevcat.com"
@@ -23,6 +23,7 @@ blog_button:
 # Navigation buttons in the front page.
 nav:
     - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    - {title: pages, description: selfmade, url: 'about.html'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
