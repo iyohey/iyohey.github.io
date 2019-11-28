@@ -24,6 +24,7 @@ blog_button:
 nav:
     - {title: click me, description: surprise, url: 'timer.html'}
     - {title: pages, description: selfmade, url: 'about.html'}
+    - {title: new, description: selfmade, url: 'review.html'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
