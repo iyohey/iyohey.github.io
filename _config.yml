@@ -34,7 +34,7 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: vno-jekyll
+    disqus: false
     # duoshuo:
       gitalk: true
   gitalk_clientID: '9ba9ea5cd8b7f03722af'
