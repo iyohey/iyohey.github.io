@@ -20,18 +20,17 @@ layout: default
 
 
 
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
 <script>
-var gitment = new Gitment({
-    owner: 'iyohey',
-    repo: 'iyohey.github.io',
-    oauth: {
-        client_id: '9ba9ea5cd8b7f03722af',
-        client_secret: '013aef594e47d6525b10bc8d1dc45e7c8148892a',
-        
-    },
+  var gitalk = new Gitalk({
+  clientID: '2eb19afceda708b27e64', // GitHub Application Client ID
+  clientSecret: '013aef594e47d6525b10bc8d1dc45e7c8148892a',
+  repo: 'iyohey.github.io'      // 存放评论的仓库
+  owner: 'iyohey',          // 仓库的创建者，
+  admin: ['iyohhey'],        // 如果仓库有多个人可以操作，那么在这里以数组形式写出
+  id: location.pathname,      // 用于标记评论是哪个页面的
 });
-gitment.render('gitmentContainer');
+gitalk.render('gitalk-container');
 </script>
