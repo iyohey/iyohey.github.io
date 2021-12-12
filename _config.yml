@@ -32,17 +32,6 @@ plugins: [jekyll-paginate]
 paginate: 10
 paginate_path: "page/:num/"
 
-# Gitment
-gitment_owner：'iyohey'
- 
-gitment_repo：'iyohey.github.io'
- 
-gitment_oauth:
- 
-    client_id: f57c833a1d26b335d146
- 
-    client_secret：c0d7d52ec124380a262cf39adec2866d68906268
-
 
     
 # Social
