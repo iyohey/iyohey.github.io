@@ -1,10 +1,9 @@
 ---
 layout: post
-title: short summary 
+title: test
 date: 2016-02-15 15:32:24.000000000 +09:00
 ---
 
-#### established my own website
-#### a memorable day
-#### midterm is drawing near
-#### lot of things to do 💪
+#### 域名审审审审怎么还审不下来
+#### 急死
+
