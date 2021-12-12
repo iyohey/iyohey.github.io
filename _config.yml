@@ -33,12 +33,12 @@ paginate: 10
 paginate_path: "page/:num/"
 
 # Gitment
-  id: 'iyohey', // optional
-  owner: 'iyohey',
-  repo: 'iyohey.github.io',
-  oauth: 
-    client_id: '9ba9ea5cd8b7f03722af',
-    client_secret: 'f2d2649828fee1c6eda4af648fcc92e2f24f205f',
+id: 'iyohey', // optional
+owner: 'iyohey',
+repo: 'iyohey.github.io',
+oauth:
+client_id: '9ba9ea5cd8b7f03722af',
+client_secret: 'f2d2649828fee1c6eda4af648fcc92e2f24f205f',
   
 
 
