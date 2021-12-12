@@ -35,7 +35,6 @@ paginate_path: "page/:num/"
 # Comment
 comment:
     disqus: false
-    # duoshuo:
       gitalk: true
   gitalk_clientID: '9ba9ea5cd8b7f03722af'
   gitalk_Secret: 'f2d2649828fee1c6eda4af648fcc92e2f24f205f'
