@@ -32,23 +32,15 @@ plugins: [jekyll-paginate]
 paginate: 10
 paginate_path: "page/:num/"
 
-const gitment = new Gitment({
+# Gitment
   id: 'iyohey', // optional
   owner: 'iyohey',
   repo: 'iyohey.github.io',
-  oauth: {
+  oauth: 
     client_id: 'f57c833a1d26b335d146',
     client_secret: 'c0d7d52ec124380a262cf39adec2866d68906268',
-  },
-  // ...
-  // For more available options, check out the documentation below
-})
+  
 
-gitment.render('comments')
-// or
-// gitment.render(document.getElementById('comments'))
-// or
-// document.body.appendChild(gitment.render())
 
     
 # Social
