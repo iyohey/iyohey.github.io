@@ -32,16 +32,19 @@ plugins: [jekyll-paginate]
 paginate: 10
 paginate_path: "page/:num/"
 
-# Gitment
-id: 'iyohey', // optional
-owner: 'iyohey',
-repo: 'iyohey.github.io',
-oauth:
-client_id: '9ba9ea5cd8b7f03722af',
-client_secret: 'f2d2649828fee1c6eda4af648fcc92e2f24f205f',
-  
-
-
+# Comment
+comment:
+    disqus: vno-jekyll
+    # duoshuo:
+      gitalk: true
+  gitalk_clientID: '9ba9ea5cd8b7f03722af'
+  gitalk_Secret: 'f2d2649828fee1c6eda4af648fcc92e2f24f205f'
+  gitalk_repo: 'iyohey.github.io'
+  gitalk_owner: 'iyohey'
+  gitalk_admin: 'iyohey'
+  distractionFreeMode: true
+    
+    
     
 # Social
 social:
