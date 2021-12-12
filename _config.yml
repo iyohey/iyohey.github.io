@@ -37,8 +37,8 @@ paginate_path: "page/:num/"
   owner: 'iyohey',
   repo: 'iyohey.github.io',
   oauth: 
-    client_id: 'f57c833a1d26b335d146',
-    client_secret: 'c0d7d52ec124380a262cf39adec2866d68906268',
+    client_id: '9ba9ea5cd8b7f03722af',
+    client_secret: 'f2d2649828fee1c6eda4af648fcc92e2f24f205f',
   
 
 
