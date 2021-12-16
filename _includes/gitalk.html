@@ -1,0 +1,21 @@
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<script type="text/javascript" src="/assets/js/md5.min.js"></script>
+<div id="gitalk-container"></div>     
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+ 
+    // gitalk的主要参数
+       clientID: '2eb19afceda708b27e64', // GitHub Application Client ID
+  clientSecret: '013aef594e47d6525b10bc8d1dc45e7c8148892a',
+  repo: 'iyohey.github.io'      // 存放评论的仓库
+  owner: 'iyohey',          // 仓库的创建者，
+  admin: ['iyohey'],        // 如果仓库有多个人可以操作，那么在这里以数组形式写出
+  id: location.pathname,      // 用于标记评论是哪个页面的
+        
+    });
+    gitalk.render('gitalk-container');
+</script> 
+<!-- Gitalk end -->
+
